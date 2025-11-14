@@ -2,12 +2,14 @@ project:
   type: website
 
 website:
-  title: "fortunapolis_website"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  navbar: false        # ❌ Removes the top navigation bar
+  search: false
+  sidebar:
+    style: "floating"  # ✅ Makes the sidebar removable/toggleable
+    collapse-level: 1
+    contents:
+      - text: "Home"
+        href: index.qmd
 
 format:
   html:
